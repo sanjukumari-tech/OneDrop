@@ -36,33 +36,26 @@
     border-radius: 5px 5px 5px 5px;
   }
   
-  .login-main div:nth-child(1) {
-    width: 460px; /* Set fixed width for child */
-    height: 312px; 
-    padding: 24px 40px; /* Adjust padding */
-    border-radius: 17px 0 0 0; /* Rounded corners */
-    border: 1px solid white; /* Use solid line for border */
-    /* opacity: 1; Set opacity to visible */
-    color: white;
-        background-color: rgb(59, 59, 55);
-  }
-  .login-main div:nth-child(2){
-    button{
-        color: white;
-        background-color: blue;
-    }
-  }
+  
+
   
   .login-footer {
     width: 100%; /* Make footer full width */
     max-width: 1440px; /* Limit to max width */
     height: 32px; 
     padding: 20px 100px; /* Adjust padding */
-    border-top: 1px solid white; /* Use solid line for border */
+    /* border-top: 1px solid white; Use solid line for border */
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center the footer content */
     opacity: 1; /* Set opacity to visible */
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 31px;
+    text-align: center;
+  
+
   }
   
   /* Responsive Styles */
