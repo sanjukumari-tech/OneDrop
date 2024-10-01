@@ -6,10 +6,10 @@ You can view the frontend here: [Frontend Link](https://vercel.com/sanjukumari-t
 ## Images
 
 ### Google Sign In
-![Google Sign In](./src/assets/googlesignIn.png)
+![Google Sign In](./frontend/src/assets/googlesignIn.png)
 
 ### Dashboard
-![Dashboard](./src/assets/dashboard.png)
+![Dashboard](./frontend/src/assets/dashboard.png)
 
 ## Backend
 You can view the backend here: [Backend Link](your-backend-link)
