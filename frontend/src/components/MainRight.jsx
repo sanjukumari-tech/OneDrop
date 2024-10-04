@@ -1,7 +1,8 @@
 import React from "react";
-import arrowButton from "../assets/arrow_back_ios.svg";
-import defaultt from "../assets/Default.svg";
-import UserMail from "./UserMail";
+import MailIcon from "../assets/mail-icon.svg";
+// import MailIcon from "../assets/mail-icon.svg";
+import OpenMailIcon from "../assets/open-mailIcon.svg";
+// import MailIcon from "../assets/mail-icon.svg";
 const MainRight = () => {
   return (
     <>
@@ -11,60 +12,100 @@ const MainRight = () => {
           color: "whitesmoke",
           height: "565px",
           width: "270px",
+          fontFamily: "Open Sans",  
           paddingLeft: "10px",
           backgroundColor: " rgba(0, 0, 0, 1)",
           overflowY: "auto",
         }}
       >
-        <div style={{ display: "flex", gap: "60px" }}>
-          <div style={{ display: "flex" }}>
-            <h2 style={{ color: "blue" }}>ALL Inbox(s) </h2>
-            <img
-              style={{ marginTop: "20px" }}
-              src={arrowButton}
-              alt=""
-              height={12}
-              width={12}
-            />
-          </div>
-
-          <img src={defaultt} alt="" />
-        </div>
         <div>
-          <h2>25/25</h2> <p>Inboxes selected</p>
+          <h3
+            style={{
+              border: "10x solid grey",
+              backgroundColor: "gray",
+              padding: "2px", fontFamily: 'Open Sans', 
+              borderRadius: "3px",
+            }}
+          >
+            {" "}
+            Lead Details
+          </h3>
+          <div style={{ display: "flex", fontFamily: 'Open Sans',  gap: "90px" }}>
+            <span>Name</span>
+            <span>Orlando</span>
+          </div>
+          <div style={{ display: "flex", gap: "60px", marginTop: "10px" }}>
+            <span>Contact No</span>
+            <span>+54-90628322343</span>
+          </div>
+          <div style={{ display: "flex", gap: "50px", marginTop: "10px" }}>
+            <span>Email ID</span>
+            <span>orlando@gmail.com</span>
+          </div>
+          <div style={{ display: "flex", gap: "50px", marginTop: "10px" }}>
+            <span>Linkedin</span>
+            <span>linkedin.com/in/timvade/</span>
+          </div>
+          <div style={{ display: "flex", gap: "50px", marginTop: "10px" }}>
+            <span>Comapny Name</span>
+            <span>Reachinbox</span>
+          </div>
         </div>
 
-        <div className="search">
-          <div>
-            <input type="text" placeholder="Search"  style={{ backgroundColor:"rgba(35, 39, 44, 1)",color:"white" , border:"1px solid gray" ,borderRadius:"3px"}}/>
-          </div>
-          <div  style={{ display: "flex",gap:"40px" }}>
-          <div style={{ display: "flex",gap:"5px" }}>
-            <h3
-              style={{
-                color: "blue",
-                border: "1px solid gray",
-                borderRadius: "50px",
-                backgroundColor: "gray",
-                height: "20px",
-                
-              }}
-            >
-              26
-            </h3>
-            <h3 style={{ color: "white" }}>New Replies</h3>
-          </div>
-          <div style={{ display: "flex", gap: "5px" }}>
-            <h3>Newest</h3>
-            <img src={arrowButton} alt="arrowbutton" />
-          </div>
+        <div></div>
+        <h3
+          style={{
+            border: "10x solid grey",
+            backgroundColor: "gray",
+            padding: "2px",
+            borderRadius: "3px",
+             fontFamily: 'Inter', 
+          }}
+        >
+          
+          Activities
+        </h3>
+        <h4>Campaign Name</h4>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h4 style={{ margin: "0 5px" }}>3 Steps</h4>
+          <hr
+            style={{
+              width: "2px",
+              height: "10px", // Height of the vertical line
+              margin: "0 3px", // Very small space between text and line
+              backgroundColor: "grey",
+              border: "none",
+            }}
+          />
+          <h4 style={{ margin: "0 0 0 2px" }}>5 Days in Sequence</h4>
+        </div>
+        <div style={{display:"flex",gap:"4px"}}>
+          <img src="../src/assets/mmail.svg" alt="" />
+          <div style={{display:"block", textAlign:"center"}}>
+          <h4>Step 1:Email</h4>
+          <div style={{display:"flex",gap:"4px",marginTop:"-10px",height:
+            "20px"
+          }}><img src="../src/assets/ssend.svg" alt="" /> sent 3rd,Feb</div>
           </div>
         </div>
-        <hr width="270px"/>
-        <UserMail/>
-        <UserMail/>
-        <UserMail/>
-        <UserMail/>
+        <div style={{display:"flex",gap:"4px"}}>
+          <img src="../src/assets/mmail.svg" alt="" />
+          <div style={{display:"block", textAlign:"center"}}>
+          <h4>Step 2:Email</h4>
+          <div style={{display:"flex",gap:"4px",marginTop:"-10px",height:
+            "20px"
+          }}><img src="../src/assets/open-mailIcon.svg"  style={{height:"10px" ,width:"30px"}} alt="" /> Opended 5th,Feb</div>
+          </div>
+        </div>
+        <div style={{display:"flex",gap:"4px"}}>
+          <img src="../src/assets/mmail.svg"  alt="" />
+          <div style={{display:"block", textAlign:"center"}}>
+          <h4>Step 3:Email</h4>
+          <div style={{display:"flex",gap:"4px",marginTop:"-10px",height:
+            "20px"
+          }}><img src="../src/assets/open-mailIcon.svg"  style={{height:"10px" ,width:"30px"}} alt="" /> sent 3rd,Feb</div>
+          </div>
+        </div>
       </div>
     </>
   );

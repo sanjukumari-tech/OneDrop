@@ -6,7 +6,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false); // Set initial state to false
+  const [isLoggedIn, setLoggedIn] = useState(true); // Set initial state to false
 
   const handleLogin = () => {
     setLoggedIn(true);

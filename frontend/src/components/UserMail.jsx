@@ -5,7 +5,7 @@ const UserMail = () => {
     <>
     <div style={{color:"white"}}>
     <div style={{display:"flex", marginTop:"-20px",gap:"30px"}}>
-        <h2>Beta@gmail.com</h2>
+        <h3>Beta@gmail.com</h3>
         <p>Mar 7</p>
     </div>
     <p style={{marginTop:"-10px"}}>I've tried a lot and .</p>

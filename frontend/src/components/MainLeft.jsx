@@ -10,12 +10,13 @@ const MainLeft = () => {
         style={{
           border: "1px solid gray",
           color: "whitesmoke",
-          height: "565px", // Fixed height for the component
-          minHeight: "400px", // Ensures the component never shrinks below this height
+          height: "565px", 
+          minHeight: "400px", 
+          fontStyle:"Open Sans",
           width: "270px",
           paddingLeft: "10px",
           backgroundColor: "rgba(0, 0, 0, 1)",
-          overflowY: "auto", // Scrolls if content exceeds the height
+          overflowY: "auto", 
         }}
       >
         <div style={{ display: "flex", gap: "60px" }}>
