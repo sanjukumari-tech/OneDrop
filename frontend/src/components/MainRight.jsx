@@ -1,8 +1,7 @@
 import React from "react";
-import MailIcon from "../assets/mail-icon.svg";
-// import MailIcon from "../assets/mail-icon.svg";
-import OpenMailIcon from "../assets/open-mailIcon.svg";
-// import MailIcon from "../assets/mail-icon.svg";
+import mmail from "../assets/mmail.svg"; // Assuming the import
+import OpenMailIcon from "../assets/open-mailIcon.svg"; // Assuming the import
+
 const MainRight = () => {
   return (
     <>
@@ -12,25 +11,26 @@ const MainRight = () => {
           color: "whitesmoke",
           height: "565px",
           width: "270px",
-          fontFamily: "Open Sans",  
+          fontFamily: "Open Sans",
           paddingLeft: "10px",
-          backgroundColor: " rgba(0, 0, 0, 1)",
+          backgroundColor: "rgba(0, 0, 0, 1)",
           overflowY: "auto",
         }}
       >
+        {/* Lead Details */}
         <div>
           <h3
             style={{
-              border: "10x solid grey",
+              border: "10px solid grey",
               backgroundColor: "gray",
-              padding: "2px", fontFamily: 'Open Sans', 
+              padding: "2px",
+              fontFamily: "Open Sans",
               borderRadius: "3px",
             }}
           >
-            {" "}
             Lead Details
           </h3>
-          <div style={{ display: "flex", fontFamily: 'Open Sans',  gap: "90px" }}>
+          <div style={{ display: "flex", gap: "90px", fontFamily: "Open Sans" }}>
             <span>Name</span>
             <span>Orlando</span>
           </div>
@@ -47,22 +47,21 @@ const MainRight = () => {
             <span>linkedin.com/in/timvade/</span>
           </div>
           <div style={{ display: "flex", gap: "50px", marginTop: "10px" }}>
-            <span>Comapny Name</span>
+            <span>Company Name</span>
             <span>Reachinbox</span>
           </div>
         </div>
 
-        <div></div>
+        {/* Activities */}
         <h3
           style={{
-            border: "10x solid grey",
+            border: "10px solid grey",
             backgroundColor: "gray",
             padding: "2px",
             borderRadius: "3px",
-             fontFamily: 'Inter', 
+            fontFamily: "Inter",
           }}
         >
-          
           Activities
         </h3>
         <h4>Campaign Name</h4>
@@ -71,39 +70,63 @@ const MainRight = () => {
           <hr
             style={{
               width: "2px",
-              height: "10px", // Height of the vertical line
-              margin: "0 3px", // Very small space between text and line
+              height: "10px",
+              margin: "0 3px",
               backgroundColor: "grey",
               border: "none",
             }}
           />
           <h4 style={{ margin: "0 0 0 2px" }}>5 Days in Sequence</h4>
         </div>
-        <div style={{display:"flex",gap:"4px"}}>
-          <img src="../src/assets/mmail.svg" alt="" />
-          <div style={{display:"block", textAlign:"center"}}>
-          <h4>Step 1:Email</h4>
-          <div style={{display:"flex",gap:"4px",marginTop:"-10px",height:
-            "20px"
-          }}><img src="../src/assets/ssend.svg" alt="" /> sent 3rd,Feb</div>
+
+        {/* Step container with vertical line */}
+        <div style={{ position: "relative", marginLeft: "15px" }}>
+          {/* Vertical Line */}
+          <div
+            style={{
+              position: "absolute",
+              top: "5px", // Adjust the top position based on your need
+              bottom: "0",
+              left: "17px", // Adjust based on alignment
+              width: "2px",
+              backgroundColor: "gray",
+              zIndex: "0", // Ensure the line is behind the images
+            }}
+          ></div>
+
+          {/* Step 1 */}
+          <div style={{ display: "flex", gap: "4px", marginBottom: "20px", position: "relative", zIndex: "1" }}>
+            <img src={mmail} alt="Mail Step 1" />
+            <div style={{ display: "block", textAlign: "center" }}>
+              <h4>Step 1: Email</h4>
+              <div style={{ display: "flex", gap: "4px", marginTop: "-10px", height: "20px" }}>
+                <img src="../src/assets/ssend.svg" alt="" /> sent 3rd, Feb
+              </div>
+            </div>
           </div>
-        </div>
-        <div style={{display:"flex",gap:"4px"}}>
-          <img src="../src/assets/mmail.svg" alt="" />
-          <div style={{display:"block", textAlign:"center"}}>
-          <h4>Step 2:Email</h4>
-          <div style={{display:"flex",gap:"4px",marginTop:"-10px",height:
-            "20px"
-          }}><img src="../src/assets/open-mailIcon.svg"  style={{height:"10px" ,width:"30px"}} alt="" /> Opended 5th,Feb</div>
+
+          {/* Step 2 */}
+          <div style={{ display: "flex", gap: "4px", marginBottom: "20px", position: "relative", zIndex: "1" }}>
+            <img src={mmail} alt="Mail Step 2" />
+            <div style={{ display: "block", textAlign: "center" }}>
+              <h4>Step 2: Email</h4>
+              <div style={{ display: "flex", gap: "4px", marginTop: "-10px", height: "20px" }}>
+                <img src={OpenMailIcon} style={{ height: "10px", width: "30px" }} alt="open" />
+                Opened 5th, Feb
+              </div>
+            </div>
           </div>
-        </div>
-        <div style={{display:"flex",gap:"4px"}}>
-          <img src="../src/assets/mmail.svg"  alt="" />
-          <div style={{display:"block", textAlign:"center"}}>
-          <h4>Step 3:Email</h4>
-          <div style={{display:"flex",gap:"4px",marginTop:"-10px",height:
-            "20px"
-          }}><img src="../src/assets/open-mailIcon.svg"  style={{height:"10px" ,width:"30px"}} alt="" /> sent 3rd,Feb</div>
+
+          {/* Step 3 */}
+          <div style={{ display: "flex", gap: "4px", position: "relative", zIndex: "1" }}>
+            <img src={mmail} alt="mail-icon" />
+            <div style={{ display: "block", textAlign: "center" }}>
+              <h4>Step 3: Email</h4>
+              <div style={{ display: "flex", gap: "4px", marginTop: "-10px", height: "20px" }}>
+                <img src={OpenMailIcon} style={{ height: "10px", width: "30px" }} alt="open mail icon" />
+                sent 3rd, Feb
+              </div>
+            </div>
           </div>
         </div>
       </div>

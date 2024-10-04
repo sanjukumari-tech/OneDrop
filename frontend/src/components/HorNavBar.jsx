@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import theme from "../assets/theme.svg";
 import downArrow from "../assets/arrow_back_ios.svg";
 
 const HorNavBar = () => {
+ 
   return (
     <div
       style={{
