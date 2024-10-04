@@ -96,22 +96,22 @@ const MainMiddle = () => {
 
         <div className="sentMail" style={{height:"400px", width:"700px",border:"1px solid gray",margin:"10px 0px 0px 40px"}}>
           <div style={{display:"flex", gap:"600px",backgroundColor:"rgba(35,39,44,1)"}}> <p style={{marginLeft:"10px"}}>Reply</p> <img src="../src/assets/close.svg" alt="" /></div>
-          <div style={{height:"40px", width:"700px",border:"1px solid gray"}}><p>To : jeanne@cloud.com</p></div>
-          <div style={{height:"40px", width:"700px",border:"1px solid gray"}}><p>From : peter@reachinbox.com</p></div>
-          <div  style={{height:"40px", width:"700px",border:"1px solid gray"}}><p>Subject : Warmup Welcome</p></div>
-          <div style={{height:"170px", width:"700px",border:"1px solid gray"}}> <p>Hi jeanne,</p></div>
-          <div style={{display:"flex",gap:"10px"}}>
-             <div style={{display:"flex",marginTop:"5px",marginLeft:"5px", border:"1px solid",background: "linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%)",height:"40px",width:"90px"
-}}><p>Send</p> <img src="src/assets/arrowDrop.svg" alt="belowArrow" /></div>
+          <div style={{height:"40px", width:"700px",border:"1px solid gray",}}><p style={{marginLeft:"5px"}}>To : jeanne@cloud.com</p></div>
+          <div style={{height:"40px", width:"700px",border:"1px solid gray"}}><p style={{marginLeft:"5px"}}>From : peter@reachinbox.com</p></div>
+          <div  style={{height:"40px", width:"700px",border:"1px solid gray"}}><p style={{marginLeft:"5px"}}>Subject : Warmup Welcome</p></div>
+          <div style={{height:"170px", width:"700px",border:"1px solid gray"}}> <p style={{marginLeft:"5px"}}>Hi jeanne,</p></div>
+          <div style={{display:"flex",gap:"20px"}}>
+             <div style={{display:"flex",marginTop:"5px",marginLeft:"5px", border:"1px solid",background: "linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%)",height:"40px",width:"100px",borderRadius:"5px",borderColor:"transparent",textAlign:"center",justifyContent:"center",
+}}><p>Send</p> <img src="src/assets/arrowDrop.svg"style={{marginTop:"5px"}} height={35} alt="belowArrow" /></div>
              <div style={{display:"flex"}}><img src="src/assets/thunder.svg" alt="" /> <p>Variables</p></div>
-             <div style={{display:"flex"}}> <img src="src/assets/eye.svg" alt="eyeIcon" /> <p>Preview Email</p></div>
-             <div style={{display:"flex"}}>
-              <img src="src/assets/arrowDrop.svg" alt="capitalA" />
-              <img src="src/assets/paperClip.svg" alt="paperClip" />
-              <img src="src/assets/scenary.svg" alt="scenary" />
-              <img src="src/assets/smily.svg" alt="smily" />
-              <img src="src/assets/peopleMinus.svg" alt="peopleminus" />
-              <img src="src/assets/arrowcloseOpen.svg" alt="closingandOpneingArrow" />
+             <div style={{display:"flex",gap:"10px"}}> <img src="src/assets/eye.svg" alt="eyeIcon" /> <p>Preview Email</p></div>
+             <div style={{display:"flex",gap:"15px"}}>
+              <img src="src/assets/capitalA.svg" height={25} style={{marginTop:"10px",gap:"10px"}} alt="capitalA" />
+              <img src="src/assets/paperClip.svg"height={25} style={{marginTop:"10px",gap:"10px"}}  alt="paperClip" />
+              <img src="src/assets/scenary.svg" height={20}style={{marginTop:"10px",gap:"10px"}}  alt="scenary" />
+              <img src="src/assets/smily.svg" height={20}style={{marginTop:"10px",gap:"10px"}}  alt="smily" />
+              <img src="src/assets/peopleMinus.svg" height={20} style={{marginTop:"10px",gap:"10px"}} alt="peopleminus" />
+              <img src="src/assets/arrowcloseOpen.svg"height={15} style={{marginTop:"10px",gap:"0px"}}  alt="closingandOpneingArrow" />
              </div>
           </div>
         </div>
