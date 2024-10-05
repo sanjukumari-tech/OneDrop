@@ -17,22 +17,22 @@ const MainLeft = () => {
           paddingLeft: "10px",
           backgroundColor: "rgba(0, 0, 0, 1)",
           overflowY: "auto", 
+          
         }}
       >
-        <div style={{ display: "flex", gap: "60px" }}>
-          <div style={{ display: "flex" }}>
+        <div style={{ display: "flex",alignItems:"center"}}>
+          <div style={{ display: "flex",justifyContent:"start",alignItems:"center",gap:"5px",width:"100%" }}>
             <h2 style={{ color: "blue" }}>ALL Inbox(s)</h2>
             <img
-              style={{ marginTop: "20px" }}
               src={arrowButton}
               alt=""
               height={12}
               width={12}
             />
           </div>
-          <img src={defaultt} alt="" />
+          <img src={defaultt} height={30} width={30} alt="search" />
         </div>
-        <div>
+        <div style={{display:"flex",gap:"20px",alignItems:"center"}}>
           <h2 style={{ marginTop: "0px",marginBottom: "0px" }}>25/25</h2>
           <p>Inboxes selected</p>
         </div>
@@ -50,24 +50,29 @@ const MainLeft = () => {
               }}
             />
           </div>
-          <div style={{ display: "flex", gap: "40px" }}>
-            <div style={{ display: "flex", gap: "5px" }}>
+          <div style={{ display: "flex", gap: "40px"}}>
+            <div style={{ display: "flex", gap: "5px" ,alignItems:"center" }}>
               <h3
                 style={{
                   color: "blue",
                   border: "1px solid gray",
-                  borderRadius: "50px",
+                  borderRadius: "50%",
                   backgroundColor: "gray",
                   height: "20px",
+                  width:"20px",
+                  display:'grid',
+                  placeItems:"center",
+                  fontSize:"12px",
+                  
                 }}
               >
                 26
               </h3>
-              <h3 style={{ color: "white" }}>New Replies</h3>
+              <h5 style={{ color: "white"}}>New Replies</h5>
             </div>
-            <div style={{ display: "flex", gap: "5px" }}>
-              <h3>Newest</h3>
-              <img src={arrowButton} alt="arrowbutton" />
+            <div style={{ display: "flex", gap: "5px",alignItems:"center" }}>
+              <h6>Newest</h6>
+              <img src={arrowButton} height={10} width={10} alt="arrowbutton" />
             </div>
           </div>
         </div>

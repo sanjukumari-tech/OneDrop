@@ -20,10 +20,15 @@ const MainMiddle = () => {
             <hr width="1000px" height="0px" />
           </div>
           <div>
-            <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
+            <div style={{ display: "flex", gap: "20px"}}>
               <p
                 style={{
-                  border: "1px sopd grey",
+                  display:"flex",
+                  alignItems:"center",
+                  gap:"8px",
+                  padding:"6px 8px",
+                  whiteSpace:"nowrap",
+                  border: "1px solid grey",
                   borderRadius: "5px",
                   backgroundColor: "gray",
                   color: "white",
@@ -38,6 +43,11 @@ const MainMiddle = () => {
                   backgroundColor: "gray",
                   color: "white",
                   marginLeft: "5px",
+                  display:"flex",
+                  alignItems:"center",
+                  gap:"8px",
+                  padding:"6px 8px",
+                  whiteSpace:"nowrap",
                 }}
               >
                 Move <img src={arrow} alt="" />
@@ -103,8 +113,8 @@ const MainMiddle = () => {
           <div style={{display:"flex",gap:"20px"}}>
              <div style={{display:"flex",marginTop:"5px",marginLeft:"5px", border:"1px solid",background: "linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%)",height:"40px",width:"100px",borderRadius:"5px",borderColor:"transparent",textAlign:"center",justifyContent:"center",
 }}><p>Send</p> <img src="src/assets/arrowDrop.svg"style={{marginTop:"5px"}} height={35} alt="belowArrow" /></div>
-             <div style={{display:"flex"}}><img src="src/assets/thunder.svg" alt="" /> <p>Variables</p></div>
-             <div style={{display:"flex",gap:"10px"}}> <img src="src/assets/eye.svg" alt="eyeIcon" /> <p>Preview Email</p></div>
+             <div style={{display:"flex",textAlign:"center",justifyContent:"center",alignItems:"center"}}><img src="src/assets/thunder.svg"  height={20} width={20}alt="" /> <p>Variables</p></div>
+             <div style={{display:"flex",gap:"10px",alignItems:"center"}}> <img src="src/assets/eye.svg" alt="eyeIcon" height={20} width={20}/> <p>Preview Email</p></div>
              <div style={{display:"flex",gap:"15px"}}>
               <img src="src/assets/capitalA.svg" height={25} style={{marginTop:"10px",gap:"10px"}} alt="capitalA" />
               <img src="src/assets/paperClip.svg"height={25} style={{marginTop:"10px",gap:"10px"}}  alt="paperClip" />

@@ -4,6 +4,7 @@ import HorNavBar from "./components/HorNavBar";
 import Login from "./components/Login";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import "./App.css"
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(true); // Set initial state to false

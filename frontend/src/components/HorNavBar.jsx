@@ -37,7 +37,7 @@ const HorNavBar = () => {
         </div>
         <div style={{ display: "flex"}}>
           Tim's Workspace
-          <img src={downArrow} alt="Arrow Icon" style={{ marginLeft: "8px" }} />
+          <img src={downArrow} alt="Arrow Icon" style={{ marginLeft: "8px" , height:"15px",width:"15px"}} />
         </div>
       </div>
     </div>
